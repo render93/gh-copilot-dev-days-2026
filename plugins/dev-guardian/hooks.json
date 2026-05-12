@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "hooks": {
+    "postToolUse": [
+      {
+        "type": "command",
+        "matcher": "^(edit|write|str_replace_editor)$",
+        "bash": "bash \"$COPILOT_PLUGIN_ROOT/scripts/log-edit.sh\"",
+        "timeoutSec": 5
+      }
+    ],
+    "sessionStart": [
+      {
+        "type": "command",
+        "bash": "bash \"$COPILOT_PLUGIN_ROOT/scripts/session-banner.sh\"",
+        "timeoutSec": 5
+      }
+    ]
+  }
+}

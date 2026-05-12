@@ -1,0 +1,16 @@
+{
+  "name": "dev-guardian",
+  "version": "0.1.0",
+  "description": "Quality and safety guardrails: error explanation, test scaffolding, secret scanning, edit auditing, and a fast test-writer agent.",
+  "author": {
+    "name": "Gerardo Greco",
+    "email": "gerardo.greco@blexin.com"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/gerardogreco/gh-copilot-dev-days-2026",
+  "keywords": ["testing", "security", "quality", "audit", "demo", "dev-days-2026"],
+  "agents": "agents",
+  "skills": "skills",
+  "hooks": "hooks.json",
+  "mcpServers": ".mcp.json"
+}

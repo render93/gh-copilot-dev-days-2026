@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "hooks": {
+    "preToolUse": [
+      {
+        "type": "command",
+        "matcher": "^bash$",
+        "bash": "bash \"$COPILOT_PLUGIN_ROOT/scripts/block-force-push.sh\"",
+        "timeoutSec": 5
+      }
+    ],
+    "userPromptSubmitted": [
+      {
+        "type": "command",
+        "bash": "bash \"$COPILOT_PLUGIN_ROOT/scripts/inject-branch-context.sh\"",
+        "timeoutSec": 5
+      }
+    ]
+  }
+}

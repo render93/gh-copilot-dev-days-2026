@@ -1,0 +1,16 @@
+{
+  "name": "pr-helper",
+  "version": "0.1.0",
+  "description": "PR workflow assistant: diff summaries, PR descriptions, changelog entries, and a senior reviewer agent backed by the GitHub MCP server.",
+  "author": {
+    "name": "Gerardo Greco",
+    "email": "gerardo.greco@blexin.com"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/gerardogreco/gh-copilot-dev-days-2026",
+  "keywords": ["pr", "review", "git", "changelog", "demo", "dev-days-2026"],
+  "agents": "agents",
+  "skills": "skills",
+  "hooks": "hooks.json",
+  "mcpServers": ".mcp.json"
+}

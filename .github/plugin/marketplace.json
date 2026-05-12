@@ -1,0 +1,26 @@
+{
+  "name": "dev-days-2026-marketplace",
+  "owner": {
+    "name": "Gerardo Greco",
+    "email": "gerardo.greco@blexin.com"
+  },
+  "metadata": {
+    "description": "Demo marketplace for GitHub Copilot Dev Days 2026 — showcases plugins with skills, custom agents, MCP servers, and hooks.",
+    "version": "0.1.0",
+    "pluginRoot": "./plugins"
+  },
+  "plugins": [
+    {
+      "name": "pr-helper",
+      "description": "PR workflow assistant — diff summaries, PR descriptions, changelog entries, and a senior reviewer agent backed by the GitHub MCP server.",
+      "version": "0.1.0",
+      "source": "pr-helper"
+    },
+    {
+      "name": "dev-guardian",
+      "description": "Quality and safety guardrails — secret scanning, error explanation, test scaffolding, edit auditing, and a fast test-writer agent.",
+      "version": "0.1.0",
+      "source": "dev-guardian"
+    }
+  ]
+}
