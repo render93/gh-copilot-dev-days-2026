@@ -95,7 +95,7 @@ Open VS Code user settings (`Ctrl+,` => "Open Settings (JSON)") and add the mark
  
 You can jump straight to this setting via `vscode://settings/chat.plugins.marketplaces`:
  
-![VS Code settings for chat plugins](img/image.png)
+![VS Code settings for chat plugins](img/marketplace-settings.png)
 Reload VS Code for the change to take effect.
  
 ### List available plugins
@@ -106,7 +106,7 @@ Open a Copilot Chat session and type:
 /plugins
 ```
  
-The plugin picker opens listing every plugin available from the registered marketplaces. Type `dev-days-2026-marketplace` in the search bar at the top to filter the list to plugins published by this marketplace.
+The plugin picker opens listing every plugin available from the registered marketplaces. Type `gh-copilot-dev-days-2026` in the search bar at the top to filter the list to plugins published by this marketplace.
  
 ### Install a plugin
  
