@@ -1,0 +1,10 @@
+copilot plugin marketplace list
+
+copilot plugin marketplace add https://github.com/render93/gh-copilot-dev-days-2026.git
+
+copilot plugin marketplace browse dev-days-2026-marketplace
+
+copilot plugin install pr-helper@dev-days-2026-marketplace
+
+copilot plugin update pr-helper 
+(> chat: update plugins)

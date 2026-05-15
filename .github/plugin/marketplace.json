@@ -6,7 +6,7 @@
   },
   "metadata": {
     "description": "Demo marketplace for GitHub Copilot Dev Days 2026 — showcases plugins with skills, custom agents, MCP servers, and hooks.",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "pluginRoot": "./plugins"
   },
   "plugins": [
@@ -21,6 +21,12 @@
       "description": "Quality and safety guardrails — secret scanning, error explanation, test scaffolding, edit auditing, and a fast test-writer agent.",
       "version": "0.1.0",
       "source": "dev-guardian"
+    },
+    {
+      "name": "story-crafter",
+      "description": "User story and documentation generator — creates user stories, acceptance criteria, and documentation from code and comments, with a documentation agent that uses retrieval-augmented generation.",
+      "version": "0.1.0",
+      "source": "story-crafter"
     }
   ]
 }

@@ -8,7 +8,7 @@ A Copilot plugin for writing development-ready user stories.
 
 - **`user-story-writer`** (model: `claude-sonnet-4-6`) — a Product Management agent that writes user stories in Mike Cohn format (`As a / I want to / so that`) with Gherkin acceptance criteria. Opinionated about quality: it flags anti-patterns and proposes fixes rather than silently accepting bad input. User-invocable.
 
-## Demo usage
+## How to use
 
 ```bash
 # After installing the plugin:
