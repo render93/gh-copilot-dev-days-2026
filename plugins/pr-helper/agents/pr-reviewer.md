@@ -2,13 +2,8 @@
 name: pr-reviewer
 description: Senior code reviewer focused on security, correctness, and readability. Use when the user asks for a PR review, a diff review, or a "second opinion" on staged changes.
 model: Claude Sonnet 4.6 (copilot)
-target: github-copilot
-user-invocable: true
-tools:
-  - bash
-  - read
-  - grep
-  - github/*
+target: vscode
+tools: [execute/getTerminalOutput, execute/runInTerminal, execute/runTests, read]
 ---
 
 # Role

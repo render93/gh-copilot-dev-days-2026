@@ -2,12 +2,13 @@
 
 Demo marketplace for the **GitHub Copilot Dev Days 2026 Napoli**.
 
-It bundles two showcase plugins, each exercising the four extensibility primitives of Copilot CLI:
+It bundles three showcase plugins, each exercising the four extensibility primitives of Copilot CLI:
 
-| Plugin         | Skills | Agent          | MCP server  | Hooks                                            |
-| -------------- | ------ | -------------- | ----------- | ------------------------------------------------ |
-| `pr-helper`    | 3      | `pr-reviewer`  | `github`    | `preToolUse`, `userPromptSubmitted`              |
-| `dev-guardian` | 3      | `test-writer`  | `filesystem`| `postToolUse`, `sessionStart`                    |
+| Plugin           | Skills | Agent                | MCP server   | Hooks                                       |
+| ---------------- | ------ | -------------------- | ------------ | ------------------------------------------- |
+| `pr-helper`      | 3      | `pr-reviewer`        | `github`     | `preToolUse`, `userPromptSubmitted`         |
+| `dev-guardian`   | 3      | `test-writer`        | `filesystem` | `postToolUse`, `sessionStart`               |
+| `story-crafter`  | —      | `user-story-writer`  | —            | —                                           |
 
 ## Installation steps
 
@@ -146,6 +147,7 @@ Skills defined in a plugin are currently only invoked by the top-level agent. Wh
 
 - **`pr-helper`** — workflow-centric: shows skills that operate on `git diff`, a custom agent that performs code review, an MCP server that surfaces issues and pull requests, and hooks that *block dangerous git operations* and *inject branch context* on every prompt.
 - **`dev-guardian`** — safety/quality-centric: shows skills for error triage and test scaffolding, a fast Haiku-powered agent for writing unit tests, an MCP server for scoped filesystem access, and hooks that *audit every edit* and *announce the session* to the model.
+- **`story-crafter`** — product-management-centric: shows a dedicated agent that writes Mike Cohn user stories with Gherkin acceptance criteria, flags anti-patterns, and enforces quality rules.
 
 Read each plugin's README for usage details and demo tips.
 

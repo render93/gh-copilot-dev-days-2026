@@ -1,13 +1,10 @@
 ---
 name: test-writer
 description: Writes focused, AAA-style unit tests for a given function, file, or behavior. Use when the user asks to "add tests", "cover this with tests", or "write a regression test".
-model: claude-haiku-4-5
-target: github-copilot
+model: Claude Haiku 4.5 (copilot)
+target: vscode
 user-invocable: true
-tools:
-  - bash
-  - read
-  - edit
+tools: [execute/getTerminalOutput, execute/runInTerminal, execute/runTests, read, edit]
 ---
 
 # Role
